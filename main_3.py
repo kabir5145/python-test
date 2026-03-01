@@ -2,82 +2,35 @@
 
 import numpy as np
 
-# Exercise 1:
-# Create a 1D array with values ranging from 0 to 9.
-# array = np.array(range(1,10))
-# print(array)
+# Exercise 14:
+# Stack two arrays vertically.
+# array_1 = np.array([1,2,3])
+# array_2 = np.array([4,5,6])
+# stack_arr = np.vstack((array_1,array_2))
+# print(stack_arr)
 
-# Exercise 2:
-# Convert a 1D array to a 2D array with 2 rows.
-# array = np.arange(10).reshape(2, -1)
-# print(array)
 
-# Exercise 3:
-# Multiply a 5x3 matrix by a 3x2 matrix.
-# matrix_1 = np.random.rand(5,3)
-# matrix_2 = np.random.rand(3,2)
-# result = np.dot(matrix_1, matrix_2)
-# print(result)
+# Exercise 15:
+# Get the common items between two arrays.
+# arr_1 = np.array([[1,2,3,4,5,6]])
+# arr_2 = np.array([7,8,9,10,5,6])
+# common_items = np.intersect1d(arr_1, arr_2)
+# print(common_items)
 
-# Exercise 4:
-# Extract all odd numbers from an array of 1-10.
-# arr = np.arange(1,11)
-# for i in arr:
-#     if i % 2 != 0:
-#         print(i, end=" ")
-
-# Exercise 5:
-# Replace all odd numbers in an array of 1-10 with -1.
-# arr = np.arange(1,11)
-# arr[arr % 2 != 0] = -1
-# print(arr)
-
-# Exercise 6:
-# Convert a 1D array to a boolean array where all positive values become True.
-# array = np.array([-1,0,1,2])
-# bool_array = array > 0
-# print(bool_array)
-
-# Exercise 7:
-# Replace all even numbers in a 1D array with their negative.
-# array = np.arange(1,11)
-# array[array % 2 == 0 ] = -array[array % 2 == 0]
-# print(array)
-
-# Exercise 8:
-# Create a random 3x3 matrix and normalize it.
-# matrix = np.random.random((3,3))
-# normalized_matrix = (matrix - np.mean(matrix)) / np.std(matrix)
-# print(normalized_matrix)
-
-# Exercise 9:
-# Calculate the sum of the diagonal elements of a 3x3 matrix.
-# matrix = np.random.random((3,3))
+# Exercise 16:
+# Create a 5x5 matrix with row values ranging from 0 to 4.
+# matrix = np.zeros((5,5))
+# matrix += np.arange(5)
 # print(matrix)
-# sum_of_diagonal = np.trace(matrix)
-# print(sum_of_diagonal)
 
-# Exercise 10:
-# Find the indices of non-zero elements from [1,2,0,0,4,0].
-# array = np.array([1,2,0,0,4,0])
-# non_zero_indices = np.nonzero(array)
-# print(non_zero_indices)
+# Exercise 17:
+# Find the index of the maximum value in a 1D array.
+# array = np.array([1,2,10,3,4,5,6,7,0])
+# find_index = array.argmax()
+# print(find_index)
 
-# Exercise 11:
-# Reverse a 1D array (first element becomes the last).
-# array = np.arange(1,11)
-# reverse_array = np.flip(array)
-# print(reverse_array)
-
-# Exercise 12:
-# Create a 3x3 identity matrix.
-# identity_matrix = np.eye(3)
-# Or
-# identity_matrix = np.identity(3)
-# print(identity_matrix)
-
-# Exercise 13:
-# Reshape a 1D array to a 2D array with 5 rows and 2 columns.
-# array = np.arange(10)
-# arr = array.reshape(5,2)
-# print(arr)
+# Exercise 18:
+# Normalize the values in a 1D array between 0 and 1.
+arr = np.array([2, 5, 10, 3, 8])
+normalized_arr = (arr - np.min(arr)) / (np.max(arr) - np.min(arr))
+print(normalized_arr)
