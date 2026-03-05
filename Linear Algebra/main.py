@@ -62,3 +62,54 @@ import numpy as np
 #
 # cross_product = np.cross(a,b)
 # print(cross_product)
+
+# 4. Determinant of a Square Array
+# Write a NumPy program to compute the determinant of a given square array.
+
+# arr = np.array([[1,2],
+#                [3,4]])
+#
+# print("Original Array:")
+#
+# for i in range(2):
+#     for j in range(2):
+#         print(arr[i][j],end=" ")
+#     print()
+#
+# determinant = np.linalg.det(arr)
+# print("Determinant of the array is : ",determinant)
+
+
+# 5. Einstein Summation Convention
+# Write a NumPy program to evaluate Einstein's summation convention of two given multidimensional arrays.
+
+# a = np.array([1,2,3])
+# b = np.array([0,1,0])
+#
+# result =  np.einsum("n,n", a, b)
+# print("Einstein’s summation convention of the said arrays:")
+# print(result)
+#
+# # Create two 3x3 arrays 'x' and 'y'
+# x = np.arange(9).reshape(3, 3)
+# y = np.arange(3, 12).reshape(3, 3)
+#
+# # Display the original higher-dimensional arrays 'x' and 'y'
+# print("Original Higher dimension:")
+# print(x)
+# print(y)
+#
+# # Compute the Einstein’s summation convention of the 2-D arrays 'x' and 'y' using np.einsum()
+# result = np.einsum("mk,kn", x, y)
+# print("Einstein’s summation convention of the said arrays:")
+# print(result)
+
+
+# 6. Inner Product of Vectors
+# Writes a NumPy program to compute the inner product of vectors for 1-D arrays (without complex conjugation) and in higher dimension.
+
+# a = np.array([1, 2, 5])
+# b = np.array([2, 1, 0])
+#
+# inner_product = np.dot(a, b)
+# print(inner_product)
